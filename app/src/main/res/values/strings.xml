@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SuggestMeASong</string>
+    <string name="title_activity_song_details">SongDetailsActivity</string>
+    <string name="top_songs_label">Top Songs Of The Last Week</string>
+    <string name="search_view_hint">Search for song…</string>
+    <string name="search_results_title">Search results for \'%1$s\'</string>
+    <string name="similar_songs_title">Similar songs to \'%1$s\'</string>
+    <string name="view_similar_songs_text">View similar songs</string>
+    <string name="empty_details_text">There is no additional information about this song yet: you can find similar songs.</string>
+    <string name="search_results_nothing_found">No results found for your query</string>
+    <string name="no_internet_text">Please check your internet connection and try again</string>
+    <string name="empty_top_tracks_text">There are no TOP songs found :(</string>
+    <string name="snackbar_no_internet_text">You appear to be offline</string>
+    <string name="snackbar_btn_action_label">Retry</string>
+    <string name="no_similar_songs_text">Wow! This song is so unique - we can\'t find any similar songs</string>
+</resources>

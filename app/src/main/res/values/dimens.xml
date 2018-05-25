@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cardview_elevation">6dp</dimen>
+    <dimen name="text_margin">20dp</dimen>
+    <dimen name="search_view_inset">8dp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SongDetailsActivity"
+    tools:showIn="@layout/activity_song_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTrackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:padding="@dimen/text_margin"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Nice For What" />
+
+        <TextView
+            android:id="@+id/tvTrackWiki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTrackTitle"
+            android:layout_margin="16dp"
+            android:lineSpacingExtra="6sp"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            tools:text="" />
+
+        <Button
+            android:id="@+id/btnViewSimilar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTrackWiki"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/view_similar_songs_text"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pbLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:indeterminateTintMode="src_atop" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTrackTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnViewSimilar"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
